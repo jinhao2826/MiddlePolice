@@ -1,0 +1,73 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+KVERSION	Makefile	/^KVERSION = $(shell uname -r)$/;"	m
+__this_module	victim.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__used	victim.mod.c	/^__used$/;"	v	file:
+capability	victim.c	/^struct capability {$/;"	s	file:
+capability	victim_official.c	/^struct capability {$/;"	s	file:
+capability_header	victim.c	/^struct capability_header{$/;"	s	file:
+capability_header	victim_official.c	/^struct capability_header{$/;"	s	file:
+capability_len	victim.c	11;"	d	file:
+capability_len	victim_official.c	11;"	d	file:
+capability_list	victim.c	/^struct capability_list{$/;"	s	file:
+capability_list	victim_official.c	/^struct capability_list{$/;"	s	file:
+cleanup_module	victim.c	/^void cleanup_module()$/;"	f
+cleanup_module	victim_official.c	/^void cleanup_module()$/;"	f
+code	victim.c	/^    char code[capability_len-16]; 	\/\/ MAC$/;"	m	struct:capability	file:
+code	victim.c	/^    char code[capability_len];$/;"	m	struct:capability_list	file:
+code	victim_official.c	/^    char code[capability_len - 16]; \/\/ MAC$/;"	m	struct:capability	file:
+code	victim_official.c	/^    char code[capability_len];$/;"	m	struct:capability_list	file:
+end	victim.c	/^    struct capability_list* end;$/;"	m	struct:capability_header	typeref:struct:capability_header::capability_list	file:
+end	victim_official.c	/^    struct capability_list *end;$/;"	m	struct:capability_header	typeref:struct:capability_header::capability_list	file:
+exist_capabilitylist_num	victim.c	10;"	d	file:
+exist_capabilitylist_num	victim_official.c	10;"	d	file:
+first	victim.c	/^    struct capability_list* first;  $/;"	m	struct:capability_header	typeref:struct:capability_header::capability_list	file:
+first	victim_official.c	/^    struct capability_list *first;  $/;"	m	struct:capability_header	typeref:struct:capability_header::capability_list	file:
+header	victim.c	/^struct capability_header* header = NULL;$/;"	v	typeref:struct:capability_header
+header	victim_official.c	/^struct capability_header * header = NULL;$/;"	v	typeref:struct:capability_header
+hook_func_in	victim.c	/^static unsigned int hook_func_in(void *priv, struct sk_buff *skb, const struct nf_hook_state *state){$/;"	f	file:
+hook_func_in	victim_official.c	/^unsigned int hook_func_in(unsigned int hooknum, struct sk_buff *skb, const struct net_device *in, const struct net_device *out, int (*okfn)(struct sk_buff *))$/;"	f
+hook_func_out	victim.c	/^static unsigned int hook_func_out(void *priv, struct sk_buff *skb, const struct nf_hook_state *state) {$/;"	f	file:
+hook_func_out	victim_official.c	/^unsigned int hook_func_out(unsigned int hooknum, struct sk_buff *skb, const struct net_device *in, const struct net_device *out, int (*okfn)(struct sk_buff *))$/;"	f
+id	victim.c	/^    unsigned int id; 			\/\/ capability ID$/;"	m	struct:capability	file:
+id	victim_official.c	/^    unsigned int id; \/\/ capability ID$/;"	m	struct:capability	file:
+init_module	victim.c	/^int init_module()$/;"	f
+init_module	victim_official.c	/^int init_module()$/;"	f
+insertCapabilityList	victim.c	/^unsigned int insertCapabilityList(unsigned int srcaddr){$/;"	f
+insertCapabilityList	victim_official.c	/^unsigned int insertCapabilityList(unsigned int srcaddr){$/;"	f
+ip_str_to_num	victim.c	/^unsigned int ip_str_to_num(const char *buf) {$/;"	f
+ip_str_to_num	victim_official.c	/^unsigned int ip_str_to_num(const char *buf)$/;"	f
+mbox_ip	victim.c	/^char mbox_ip[15] = "192.168.150.3";$/;"	v
+mbox_ip	victim_official.c	/^char mbox_ip[15] = "192.168.1.174";$/;"	v
+mbox_networkip	victim.c	/^unsigned int mbox_networkip = 0;$/;"	v
+mbox_networkip	victim_official.c	/^unsigned int mbox_networkip = 0;$/;"	v
+my_net	victim.c	/^struct net* my_net;$/;"	v	typeref:struct:net
+mylock	victim.c	/^static spinlock_t mylock;$/;"	v	file:
+mylock	victim_official.c	/^static spinlock_t mylock;$/;"	v	file:
+next	victim.c	/^    struct capability_header* next;$/;"	m	struct:capability_header	typeref:struct:capability_header::capability_header	file:
+next	victim.c	/^    struct capability_list* next;$/;"	m	struct:capability_list	typeref:struct:capability_list::capability_list	file:
+next	victim_official.c	/^    struct capability_header *next;$/;"	m	struct:capability_header	typeref:struct:capability_header::capability_header	file:
+next	victim_official.c	/^    struct capability_list * next;$/;"	m	struct:capability_list	typeref:struct:capability_list::capability_list	file:
+nf_hook_in	victim.c	/^static struct nf_hook_ops nf_hook_in = {$/;"	v	typeref:struct:nf_hook_ops	file:
+nf_hook_in	victim_official.c	/^static struct nf_hook_ops nf_hook_in;$/;"	v	typeref:struct:nf_hook_ops	file:
+nf_hook_out	victim.c	/^static struct nf_hook_ops nf_hook_out = {$/;"	v	typeref:struct:nf_hook_ops	file:
+nf_hook_out	victim_official.c	/^static struct nf_hook_ops nf_hook_out;$/;"	v	typeref:struct:nf_hook_ops	file:
+obj-m	Makefile	/^obj-m = victim.o$/;"	m
+saddr	victim.c	/^    unsigned int saddr;			\/\/ the source address of the sender	$/;"	m	struct:capability	file:
+saddr	victim.c	/^    unsigned int saddr;$/;"	m	struct:capability_header	file:
+saddr	victim_official.c	/^    unsigned int saddr;	\/\/ the source address of the sender	$/;"	m	struct:capability	file:
+saddr	victim_official.c	/^    unsigned int saddr;$/;"	m	struct:capability_header	file:
+searchCapabilityHeader	victim.c	/^struct capability_header* searchCapabilityHeader(unsigned int addr){$/;"	f
+searchCapabilityHeader	victim_official.c	/^struct capability_header *searchCapabilityHeader(unsigned int addr){$/;"	f
+tail	victim.c	/^struct capability_header* tail = NULL;$/;"	v	typeref:struct:capability_header
+tail	victim_official.c	/^struct capability_header * tail = NULL;$/;"	v	typeref:struct:capability_header
+timestamp	victim.c	/^    unsigned long timestamp; 		\/\/ the time when a packet arrived at the mbox$/;"	m	struct:capability	file:
+timestamp	victim_official.c	/^    unsigned long timestamp; \/\/ the time when a packet arrived at the mbox$/;"	m	struct:capability	file:
+victim_ip	victim.c	/^char victim_ip[15] = "192.168.160.4";$/;"	v
+victim_ip	victim_official.c	/^char victim_ip[15] = "192.168.2.253";$/;"	v
+victim_networkip	victim.c	/^unsigned int victim_networkip = 0;$/;"	v
+victim_networkip	victim_official.c	/^unsigned int victim_networkip = 0;$/;"	v

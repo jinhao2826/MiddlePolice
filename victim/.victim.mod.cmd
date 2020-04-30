@@ -1,0 +1,1 @@
+cmd_/home/haojin/MiddlePolice/Kernel_Module_Implementation/victim/victim.mod := { echo  /home/haojin/MiddlePolice/Kernel_Module_Implementation/victim/victim.o; echo; } > /home/haojin/MiddlePolice/Kernel_Module_Implementation/victim/victim.mod
